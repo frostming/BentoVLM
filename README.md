@@ -31,7 +31,13 @@ pdm dev
 
 1. Go to [BentoCloud](https://cloud.bentoml.com) and get an account.
 2. Click "Secret" in the sidebar and create an "OpenAI" secret with your API key.
-3. Deploy the service to BentoCloud:
+3. Login to BentoCloud:
+
+   ```bash
+   pdm run bentoml cloud login
+   ```
+
+4. Deploy the service to BentoCloud:
 
    ```bash
    pdm deploy --secret <your-secret-name>
